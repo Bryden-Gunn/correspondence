@@ -4,7 +4,7 @@ exports.up = (knex) => {
     table.string('name')
     table.string('username')
     table.string('email')
-    table.string('delay_id').references('delay.id')
+    table.string('delay_id')
   })
 }
 
