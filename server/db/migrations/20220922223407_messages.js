@@ -5,7 +5,7 @@ exports.up = function (knex) {
     table.string('sender_username')
     table.string('message')
     table.string('subject')
-    table.integer('active_time')
+    table.string('active_time')
     table.boolean('read')
     table.boolean('archived')
     table.boolean('sent')
