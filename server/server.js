@@ -8,6 +8,7 @@ const server = express()
 
 server.use(express.json())
 server.use(express.static(path.join(__dirname, 'public')))
+server.use(express.static(path.resolve(__dirname, '../dist')))
 
 server.use('/api/v1/contacts', contactRoutes)
 server.use('/api/v1/users', userRoutes)

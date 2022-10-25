@@ -6,9 +6,8 @@
   "scripts": {
     "start": "node",
     "build": "run-p build:client build:server",
-    "build:client": "npm run webpack -- --mode production",
+    "build:client": "vite build",
     "build:server": "npm run knex -- migrate:latest",
-    "webpack": "webpack --config ./client/webpack.config.js",
     "dev": "run-p dev:server dev:client",
     "dev:server": "nodemon --watch server server/index.js",
     "dev:client": "vite",
